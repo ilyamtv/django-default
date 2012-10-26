@@ -139,7 +139,7 @@ INSTALLED_APPS = (
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-        'LOCATION': os.path.join(PROJECT_ROOT, 'stock/cache'),
+        'LOCATION': path.join(PROJECT_ROOT, 'stock/cache'),
         'TIMEOUT': 3600,
     }
 }

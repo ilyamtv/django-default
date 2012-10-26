@@ -1,2 +1,4 @@
 Django==1.4
 South==0.7.6
+
+feincms=1.6

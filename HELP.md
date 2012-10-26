@@ -1,8 +1,8 @@
 HELP
 ==============
 
-South
-http://south.readthedocs.org/en/latest/
-schemamigration appname --initial
-schemamigration appname --auto
-migrate appname
+### South
+[Documentaition](http://south.readthedocs.org/en/latest/)  
+schemamigration appname --initial  
+schemamigration appname --auto  
+migrate appname  

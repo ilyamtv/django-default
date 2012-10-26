@@ -31,12 +31,17 @@ pip-log.txt
 ##
 
 # -files
+.DS_Store
+.gitignore
 .project
 .pydevproject
+.settings
 project/settings_dev.py
 project/manage_dev.py
 
 # -dirs
+.settings/
+project/packages
 project/web/media
 project/stock/cache
 project/stock/logs
