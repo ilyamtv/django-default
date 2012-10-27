@@ -107,6 +107,11 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
+TEMPLATE_CONTEXT_PROCESSORS += (
+    'django.core.context_processors.request',
+)
+
 ROOT_URLCONF = 'urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
@@ -131,6 +136,9 @@ INSTALLED_APPS = (
     # base
     'mptt',
     'south',
+    'endless_pagination',
+    
+    'core',
     
     # apps
     'article',
