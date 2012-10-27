@@ -1,0 +1,16 @@
+{% load endless %}
+
+{% paginate 1 articles %}
+
+{% get_pages %}
+
+{% for article in articles %}
+    <p>
+        <i>{{ article.date_start }}</i> <br/>
+        
+        <a title="{{ entity.title }}" href="{{ article.get_absolute_url }}">{{ article.title }}</a> <br/>
+        {{ article.short_content }} <br/>
+    </p>
+{% endfor %}
+
+{% show_pages %}

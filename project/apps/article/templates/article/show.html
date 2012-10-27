@@ -1,0 +1,14 @@
+{% extends "page.html" %}
+
+{% block page_title %}{{ entity.title }}{% endblock %}
+
+{% block content %}
+    
+    <i>{{ article.date_start }}</i>
+    <h1>{{ article.title }}</h1>
+    
+    {% autoescape off %}
+        {{ article.content }}
+    {% endautoescape %}
+    
+{% endblock %}
