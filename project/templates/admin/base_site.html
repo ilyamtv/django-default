@@ -7,8 +7,12 @@
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 {% endblock %}
 
+{% block extrastyle %}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}core/admin/css/base.css" />
+{% endblock %}
+
 {% block branding %}
-<h1 id="site-name">fox</h1>
+<h1 id="site-name">Система управления сайтом</h1>
 {% endblock %}
 
 {% block nav-global %}{% endblock %}
